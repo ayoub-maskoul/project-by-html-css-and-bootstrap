@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+:root{
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+*{
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: var(--Bright-Red);
+    color: var(--Dark-Blue);
+}
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head{
+    display: flex;
+    justify-content: space-evenly;
+}
+.st{
+    background-color: var(--Bright-Red);
+    color: var(--Vary-Light-Gray);
+    border-radius: 20px;
+    padding:  8px 20px;
+}
+@media (max-width:991px) {
+    .head{
+        flex-direction: column;
+    }
+}
+h1{
+    color: var(--Dark-Blue);
+}
+p{
+    color: var(--Dark-Grayish-Blue);
+}
+.nomber{
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--Bright-Red);
+    color: var(--Vary-Light-Gray);
+    border-radius:15px;
+    padding: 5px 19px;
+}
+.img{
+    width: 70px;
+}
+.cards{
+    transition: 0.45s;
+}
+.cards:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: translateY(-7px);
+}
+.section-bot{
+    background-color: var(--Bright-Red);
+}
+.section-bot .st2{
+    color: var(--Bright-Red);
+    background-color: var(--Very-Pale-Red);
+    border-radius: 18px;
+}
+.section-bot .st2:hover{
+    color: var(--Very-Pale-Red);
+    background-color: var(--Bright-Red);
+    outline: 2px solid var(--Very-Pale-Red);
+}
+button:focus{
+    box-shadow: none !important;
+}
+.section-bot .title{
+    color: var(--Very-Pale-Red);
+}
+footer{
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Vary-Light-Gray);
+}
+footer div div .link{
+    color: rgb(220, 211, 211);
+    border-bottom: 1px solid rgb(220, 211, 211);
+    transition: .35s;
+    margin-bottom: 3px;
+}
+footer .link::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f105';
+    margin-right:3px;
+    color: var(--Bright-Red);
+}
+footer div div .link:hover{
+    cursor: pointer;
+    color: var(--Very-Pale-Red);
+    padding-left: 5px;
+    border-bottom-color: var(--Very-Pale-Red);
+}
+.logo path:hover{
+    fill: var(--Bright-Red);
+    cursor: pointer;
+}
+footer input,footer button{
+    height: 40px;
+    border: none;
+    width:fit-content;
+    border-radius: 20px ;
+}
+footer input:focus{
+    outline: 1px solid red;
+    color: red;
+}
+.lg .icons a{
+    font-size: 25px ;
+    color: var(--Very-Pale-Red);
+}
+.lg .icons a:hover{
+    color: var(--Bright-Red) ;
+}
+input::placeholder{
+    font-size: 11px;
+}
